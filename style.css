@@ -894,3 +894,30 @@ body.view-control-buttons .viewControlButton {
   height: auto !important;
   overflow-y: auto !important;
 }
+
+@media (max-width: 500px) {
+  .info-hotspot-modal {
+    max-height: 60vh !important;   /* Limit height */
+    top: 70px !important;          /* Space from top of page */
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 90% !important;
+    overflow-y: auto !important;
+    padding: 10px 15px !important;
+    box-sizing: border-box;
+  }
+
+  .info-hotspot-modal .info-hotspot-header {
+    margin-bottom: 8px;
+  }
+
+  .info-hotspot-modal .info-hotspot-title {
+    font-size: 1.2em;
+    line-height: 1.4;
+  }
+
+  .info-hotspot-modal .info-hotspot-text {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+}
