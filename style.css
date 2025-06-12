@@ -848,30 +848,40 @@ body.view-control-buttons .viewControlButton {
 
 .mobile .info-hotspot-modal {
   position: fixed;
-  top: 50px;
-  left: 20px;
-  right: 20px;
-  max-height: 70vh;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  max-height: 80vh;
+  background-color: rgba(58, 68, 84, 0.95);
+  border-radius: 8px;
+  padding: 16px;
   overflow-y: auto;
-  background-color: rgba(58,68,84,0.95);
-  border-radius: 6px;
-  padding: 10px;
   z-index: 1000;
   display: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .mobile .info-hotspot-modal.visible {
   display: block;
 }
 
+.mobile .info-hotspot-modal .info-hotspot-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
 .mobile .info-hotspot-modal .info-hotspot-title {
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: bold;
-  margin-bottom: 8px;
+  margin: 0;
 }
 
 .mobile .info-hotspot-modal .info-hotspot-text {
+  font-size: 0.95em;
+  line-height: 1.4em;
   max-height: none;
-  overflow: visible;
   height: auto;
+  overflow: visible;
 }
