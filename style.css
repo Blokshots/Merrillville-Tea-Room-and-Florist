@@ -846,27 +846,17 @@ body.view-control-buttons .viewControlButton {
   background-color: rgba(58,68,84,0.8);
 }
 
-
-.marzipano-hotspot .description {
-  position: fixed;
-  top: 80px; /* Adjust this to match original spacing */
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 90vw;
-  width: auto;
-  padding: 16px;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  font-size: 1rem;
-  line-height: 1.4;
-  border-radius: 12px;
-  z-index: 9999;
-  max-height: 40vh;
-  overflow-y: auto;
-  box-sizing: border-box;
-}
-
-.marzipano-hotspot .description h1,
-.marzipano-hotspot .description h2 {
-  margin-top: 0;
+@media screen and (max-width: 768px) {
+  .info-hotspot .info-hotspot-text {
+    top: 60px;
+    left: 5%;
+    right: 5%;
+    max-width: 90%;
+    max-height: 35vh;
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 1000;
+    font-size: 1.1em;
+    line-height: 1.5;
+  }
 }
