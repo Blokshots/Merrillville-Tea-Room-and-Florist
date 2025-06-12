@@ -841,24 +841,3 @@ body.view-control-buttons .viewControlButton {
   padding: 0 15px;
   background-color: rgba(58,68,84,0.8);
 }
-/* on small screens let the info-text size to its content */
-@media (max-width: 600px) {
-  .info-hotspot .info-hotspot-text {
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: auto;             /* let it auto-size */
-    max-width: 90%;          /* but don’t go wider than 90% of screen */
-    padding: 10px;
-    background-color: rgba(58,68,84,0.8);
-    overflow-wrap: break-word;
-    white-space: normal;     /* allow multi-line wrapping */
-    max-height: none;        /* let it grow with content */
-  }
-  /* remove the 3D rotation hide/show trick… */
-  .info-hotspot .info-hotspot-text {
-    transform: none !important;
-    visibility: visible !important;
-    transition: none !important;
-  }
-}
