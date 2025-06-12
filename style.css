@@ -594,13 +594,14 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 
 .info-hotspot .info-hotspot-text {
   position: absolute;
-  width: 300px;
+  width: auto;              /* allow width to auto adjust */
+  max-width: 300px;         /* max width stays at 300px */
   height: auto;
   max-height: 200px;
   top: 40px;
   left: 0;
   padding: 10px;
-  background-color: rgb(58,68,84);
+  background-color: rgba(58,68,84,0.8);  /* keep your semi-transparent background */
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   overflow-y: auto;
@@ -625,6 +626,9 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text;
+
+  display: inline-block;    /* added for shrink to fit */
+  white-space: normal;      /* allow text wrapping */
 }
 
 .desktop .info-hotspot.visible .info-hotspot-text {
