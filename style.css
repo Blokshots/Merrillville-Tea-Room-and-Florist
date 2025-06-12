@@ -846,19 +846,6 @@ body.view-control-buttons .viewControlButton {
   background-color: rgba(58,68,84,0.8);
 }
 
-@media screen and (max-width: 768px) {
-  body:not(.desktop) .info-hotspot .info-hotspot-text {
-    top: 60px !important;
-    left: 5% !important;
-    right: 5% !important;
-    max-width: 90% !important;
-    max-height: none !important;
-    height: auto !important;
-    padding: 15px !important;
-    border-radius: 10px;
-    z-index: 1000;
-    font-size: 1.1em;
-    line-height: 1.5;
-    overflow-y: visible !important;
-  }
+.info-hotspot-modal .info-hotspot-text {
+  background-color: red !important;
 }
