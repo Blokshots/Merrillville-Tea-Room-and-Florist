@@ -846,17 +846,20 @@ body.view-control-buttons .viewControlButton {
   background-color: rgba(58,68,84,0.8);
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .info-hotspot .info-hotspot-text {
-    top: 60px;
-    left: 5%;
-    right: 5%;
-    max-width: 90%;
-    max-height: 35vh;
-    padding: 15px;
-    border-radius: 10px;
-    z-index: 1000;
-    font-size: 1.1em;
-    line-height: 1.5;
+    max-height: none;         /* remove the 200px height cap */
+    height: auto;             /* allow it to shrink-wrap content */
+    top: 30px;                /* adjust position to be not too high */
+    left: 0;
+    right: 0;
+    margin: 0 auto;           /* center it horizontally if needed */
+    width: fit-content;       /* shrink to fit content width */
+    max-width: 90vw;          /* but not overflow the screen */
+    padding: 10px;
+    background-color: rgba(58,68,84,0.9);
+    overflow-y: visible;      /* not needed, but ensures no scrollbar */
+    border-radius: 6px;
+    z-index: 1000;            /* bring it to front if needed */
   }
 }
