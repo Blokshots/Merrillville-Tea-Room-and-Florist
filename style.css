@@ -921,3 +921,27 @@ body.view-control-buttons .viewControlButton {
     line-height: 1.5;
   }
 }
+
+.marzipano-hotspot .description {
+  position: fixed;
+  top: 80px; /* Adjust this to match original spacing */
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 90vw;
+  width: auto;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 1rem;
+  line-height: 1.4;
+  border-radius: 12px;
+  z-index: 9999;
+  max-height: 40vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.marzipano-hotspot .description h1,
+.marzipano-hotspot .description h2 {
+  margin-top: 0;
+}
